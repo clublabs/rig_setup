@@ -1,0 +1,31 @@
+[core]
+	editor = vim
+
+[alias]
+  aa = add -A
+  ap = !git add -N -A && git add -p
+  st = status
+  br = branch
+  rv = remote -v
+  ci = commit
+  cm = commit -m
+  co = checkout
+  cb = checkout -b
+  pl = pull
+  pr = pull -r
+  ps = push
+  cp = cherry-pick
+  rv = revert
+  rh = reset head^
+  ri = rebase -i
+  am = commit --amend
+  amn = commit --amend --no-edit
+  wip = !git add -A && git commit -m "wip"
+  track = add -N -A
+  unstage = "reset HEAD --"
+  yolo = !git push -f --no-verify
+  lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset - %C(bold blue)<%an>%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)' --abbrev-commit
+
+[user]
+	name = anonymous
+	email = anonymous@clublabs.com
